@@ -64,11 +64,11 @@ void loop() {
   if (cval5>255) {
     cval5=255;
   }
-  else if (cval5<5){
+  else if (cval5<7){
     cval5=0;
   }
-  // Serial.print("Clutch:");
-  // Serial.println(cval5);
+  Serial.print("Clutch:");
+  Serial.println(cval5);
   Joystick.setXAxis(cval5);
   // Joystick.setHatSwitch(0,cval5);
 
@@ -82,12 +82,12 @@ void loop() {
   if (bval5>255) {
     bval5=255;
   }
-  else if (bval5<5){
+  else if (bval5<7){
     bval5=0;
   }
   
-  // Serial.print("Brake:");
-  // Serial.println(bval5);
+  Serial.print("Brake:");
+  Serial.println(bval5);
   Joystick.setYAxis(bval5);
   // Joystick.setHatSwitch(1,bval5);
 
@@ -101,12 +101,12 @@ void loop() {
    if (aval5>255) {
     aval5=255;
   }
-  else if (aval5<6){
+  else if (aval5<8){
     aval5=0;
   }
 
-  // Serial.print("Acc:");
-  // Serial.println(aval5);
+  Serial.print("Acc:");
+  Serial.println(aval5);
   Joystick.setZAxis(aval5);
   // Joystick.setHatSwitch(2,aval5);
 
